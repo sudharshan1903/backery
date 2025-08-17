@@ -27,5 +27,6 @@
   },
   "keywords": ["bakery", "react", "arunasbakehouse", "artisanal"],
   "author": "Your Name",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module"
 }
