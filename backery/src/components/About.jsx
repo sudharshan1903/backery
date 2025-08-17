@@ -163,7 +163,7 @@ const About = () => {
              </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                     <div className="responsive-grid">
             {features.map((feature, index) => (
               <motion.div
                 key={feature.title}
@@ -172,7 +172,7 @@ const About = () => {
                 transition={{ delay: 1.2 + index * 0.1, duration: 0.6 }}
                 className="text-center group"
               >
-                                 <div className="text-6xl mb-4 animate-bounce-gentle group-hover:scale-110 transition-transform duration-300 sparkle">
+                                 <div className="text-4xl sm:text-5xl lg:text-6xl mb-4 animate-bounce-gentle group-hover:scale-110 transition-transform duration-500 sparkle">
                    {feature.icon}
                  </div>
                 <h3 className="text-xl font-serif font-bold text-bonbon-dark mb-3">
@@ -193,7 +193,7 @@ const About = () => {
           transition={{ delay: 1.6, duration: 0.8 }}
           className="mt-20"
         >
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
             {desserts.map((dessert, index) => (
               <motion.div
                 key={dessert.name}

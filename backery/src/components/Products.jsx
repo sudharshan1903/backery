@@ -142,7 +142,7 @@ const Products = () => {
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="responsive-grid"
         >
           {products.map((product) => (
             <motion.div
@@ -152,7 +152,7 @@ const Products = () => {
             >
               {/* Product Image */}
               <div className="relative h-64 bg-gradient-to-br from-bonbon-peach via-bonbon-cream to-bonbon-pink flex items-center justify-center">
-                <div className="text-8xl animate-float sparkle">
+                <div className="text-6xl sm:text-7xl lg:text-8xl animate-float sparkle">
                   {product.image}
                 </div>
                 

@@ -41,14 +41,14 @@ const Header = ({ isScrolled }) => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-3"
           >
-            <div className="w-16 h-16 bg-gradient-to-r from-bonbon-pink to-bonbon-gold rounded-full flex items-center justify-center shadow-lg">
-              <img
-                src="/assets/arunas_cake_house_logo.jpg"
-                alt="Arunas Cake House Logo"
-                className="w-14 h-14 rounded-full object-cover"
-              />
+            <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-r from-bonbon-pink to-bonbon-gold rounded-full flex items-center justify-center shadow-lg">
+                              <img
+                  src="/assets/arunas_cake_house_logo.jpg"
+                  alt="Arunas Cake House Logo"
+                  className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-full object-cover"
+                />
             </div>
-            <span className="text-3xl font-serif font-bold bg-gradient-to-r from-bonbon-dark to-bonbon-brown bg-clip-text text-transparent">
+            <span className="text-xl sm:text-2xl lg:text-3xl font-serif font-bold bg-gradient-to-r from-bonbon-dark to-bonbon-brown bg-clip-text text-transparent">
               Arunasbakehouse
             </span>
           </motion.div>

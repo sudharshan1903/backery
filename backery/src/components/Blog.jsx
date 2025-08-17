@@ -103,7 +103,7 @@ const Blog = () => {
           variants={containerVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-12 lg:mb-16"
         >
           {blogPosts.map((post) => (
             <motion.article
@@ -113,7 +113,7 @@ const Blog = () => {
             >
               {/* Post Image */}
               <div className="relative h-64 bg-gradient-to-br from-bonbon-peach via-bonbon-cream to-bonbon-pink flex items-center justify-center">
-                <div className="text-8xl animate-float sparkle">
+                <div className="text-6xl sm:text-7xl lg:text-8xl animate-float sparkle">
                   {post.image}
                 </div>
                 

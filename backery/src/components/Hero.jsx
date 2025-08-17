@@ -55,20 +55,20 @@ const Hero = () => {
                initial={{ opacity: 0, y: 30 }}
                animate={{ opacity: 1, y: 0 }}
                transition={{ delay: 0.4, duration: 0.8 }}
-               className="text-5xl lg:text-7xl font-serif font-bold text-bonbon-dark mb-6 leading-tight text-shadow"
+               className="responsive-text font-serif font-bold text-bonbon-dark mb-4 sm:mb-6 leading-tight text-shadow"
              >
                Handmade{' '}
                <span className="text-gradient sparkle">mini cupcakes</span>
              </motion.h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.6 }}
-              className="text-lg text-bonbon-brown mb-8 max-w-lg mx-auto lg:mx-0"
-            >
-              Our passion for baking goes beyond just creating delicious treats. We believe every dessert tells a story and creates lasting memories for our customers and their loved ones.
-            </motion.p>
+                         <motion.p
+               initial={{ opacity: 0, y: 20 }}
+               animate={{ opacity: 1, y: 0 }}
+               transition={{ delay: 0.6, duration: 0.6 }}
+               className="text-base sm:text-lg text-bonbon-brown mb-6 sm:mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed"
+             >
+               Our passion for baking goes beyond just creating delicious treats. We believe every dessert tells a story and creates lasting memories for our customers and their loved ones.
+             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -96,12 +96,12 @@ const Hero = () => {
             </motion.div>
 
             {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 0.6 }}
-              className="flex justify-center lg:justify-start space-x-8 mt-12"
-            >
+                         <motion.div
+               initial={{ opacity: 0, y: 30 }}
+               animate={{ opacity: 1, y: 0 }}
+               transition={{ delay: 1, duration: 0.6 }}
+               className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-8 mt-8 sm:mt-12"
+             >
               <div className="text-center">
                                  <div className="text-3xl font-bold text-bonbon-gold pulse-glow">500+</div>
                 <div className="text-sm text-bonbon-brown">Happy Customers</div>
@@ -130,11 +130,11 @@ const Hero = () => {
                 initial={{ scale: 0, rotate: -180 }}
                 animate={{ scale: 1, rotate: 0 }}
                 transition={{ delay: 0.5, duration: 0.8, type: "spring" }}
-                className="relative mx-auto w-80 h-80 lg:w-96 lg:h-96"
+                className="relative mx-auto w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-bonbon-peach to-bonbon-pink rounded-full blur-2xl opacity-40"></div>
                                  <div className="relative bg-white rounded-full w-full h-full flex items-center justify-center shadow-2xl glow-effect">
-                  <div className="text-8xl lg:text-9xl">
+                  <div className="text-6xl sm:text-7xl lg:text-8xl xl:text-9xl">
                     🧁
                   </div>
                 </div>
@@ -152,7 +152,7 @@ const Hero = () => {
                   initial={{ scale: 0, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   transition={{ delay: item.delay, duration: 0.5, ease: "easeOut" }}
-                  className={`${item.position} text-4xl`}
+                  className={`${item.position} text-2xl sm:text-3xl lg:text-4xl`}
                 >
                   {item.emoji}
                 </motion.div>

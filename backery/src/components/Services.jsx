@@ -82,7 +82,7 @@ const Services = () => {
         </motion.div>
 
         {/* Services Grid */}
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+                 <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-12 lg:mb-20">
           {/* Left - Services List */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -140,9 +140,9 @@ const Services = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-bonbon-peach to-bonbon-pink rounded-3xl blur-2xl opacity-30"></div>
                              <div className="relative bg-gradient-to-br from-bonbon-cream to-bonbon-peach rounded-3xl p-12 text-center glow-effect">
-                <div className="text-8xl mb-6 animate-float">
-                  🎂
-                </div>
+                                 <div className="text-6xl sm:text-7xl lg:text-8xl mb-6 animate-float">
+                   🎂
+                 </div>
                 <h3 className="text-2xl font-serif font-bold text-bonbon-dark mb-4">
                   Delicious treats
                 </h3>
@@ -175,7 +175,7 @@ const Services = () => {
         </motion.div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                 <div className="responsive-grid">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.name}
@@ -184,7 +184,7 @@ const Services = () => {
               transition={{ delay: 1 + index * 0.1, duration: 0.6 }}
               className="bg-white rounded-2xl p-6 shadow-lg card-hover text-center"
             >
-                             <div className="text-4xl mb-4 animate-bounce-gentle sparkle">
+                             <div className="text-3xl sm:text-4xl mb-4 animate-bounce-gentle sparkle">
                 {index === 0 && '🍰'}
                 {index === 1 && '🌈'}
                 {index === 2 && '🧁'}
