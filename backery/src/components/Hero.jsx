@@ -1,6 +1,16 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ArrowRight, Star } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
+
+const handleNavClick = (href) => {
+  const element = document.querySelector(href)
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  }
+}
 
 const Hero = () => {
   const floatingElements = [
@@ -10,35 +20,25 @@ const Hero = () => {
     { icon: '🍩', delay: 1.5, position: 'bottom-20 right-10' },
   ]
 
-  const handleNavClick = (href) => {
-    const element = document.querySelector(href)
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      })
-    }
-  }
-
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-bonbon-cream via-pink-50 to-purple-50">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-bonbon-cream via-pink-50 to-purple-50 pt-24 scroll-mt-24">
       {/* Floating Elements */}
       {floatingElements.map((element, index) => (
         <motion.div
           key={index}
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: element.delay, duration: 1 }}
-          className={`absolute text-4xl animate-bounce-gentle ${element.position} hidden lg:block`}
+          transition={{ delay: element.delay, duration: 1, ease: "easeOut" }}
+          className={`absolute text-4xl ${element.position} hidden lg:block`}
         >
           {element.icon}
         </motion.div>
       ))}
 
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-bonbon-pink rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-bonbon-purple rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 opacity-5" aria-hidden="true">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-bonbon-pink rounded-full blur-3xl hidden md:block"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-bonbon-purple rounded-full blur-3xl hidden md:block"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -134,7 +134,7 @@ const Hero = () => {
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-pink-200 to-purple-200 rounded-full blur-2xl opacity-30"></div>
                 <div className="relative bg-white rounded-full w-full h-full flex items-center justify-center shadow-2xl">
-                  <div className="text-8xl lg:text-9xl animate-float">
+                  <div className="text-8xl lg:text-9xl">
                     🧁
                   </div>
                 </div>
@@ -151,8 +151,8 @@ const Hero = () => {
                   key={index}
                   initial={{ scale: 0, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
-                  transition={{ delay: item.delay, duration: 0.5 }}
-                  className={`${item.position} text-4xl animate-bounce-gentle`}
+                  transition={{ delay: item.delay, duration: 0.5, ease: "easeOut" }}
+                  className={`${item.position} text-4xl`}
                 >
                   {item.emoji}
                 </motion.div>
@@ -176,8 +176,6 @@ const Hero = () => {
           onClick={() => handleNavClick('#products')}
         >
           <motion.div
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
             className="w-1 h-3 bg-bonbon-pink rounded-full mt-2"
           />
         </motion.div>
