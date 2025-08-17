@@ -56,7 +56,7 @@ const About = () => {
    ]
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-bonbon-cream to-pink-50">
+    <section id="about" className="py-20 bg-gradient-to-br from-bonbon-cream to-white">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
@@ -72,7 +72,7 @@ const About = () => {
               transition={{ delay: 0.2, duration: 0.6 }}
               className="mb-6"
             >
-              <h2 className="text-4xl lg:text-5xl font-serif font-bold text-bonbon-dark mb-6">Our Story</h2>
+                             <h2 className="text-4xl lg:text-5xl font-serif font-bold text-bonbon-dark mb-6 text-shadow">Our Story</h2>
               <h3 className="text-bonbon-pink font-medium mb-2">Welcome to Arunasbakehouse!</h3>
               <h2 className="text-4xl lg:text-5xl font-serif font-bold text-bonbon-dark mb-6">
                 We bake and provide{' '}
@@ -123,10 +123,10 @@ const About = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.2 + index * 0.2, duration: 0.6 }}
-                className="bg-white rounded-2xl p-8 shadow-lg card-hover"
+                                 className="bg-white rounded-2xl p-8 shadow-lg card-hover glow-effect"
               >
                 <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-gradient-to-r from-bonbon-pink to-bonbon-purple rounded-full flex items-center justify-center">
+                  <div className="w-16 h-16 bg-gradient-to-r from-bonbon-pink to-bonbon-gold rounded-full flex items-center justify-center shadow-lg">
                     <stat.icon className="w-8 h-8 text-white" />
                   </div>
                   <div>
@@ -172,9 +172,9 @@ const About = () => {
                 transition={{ delay: 1.2 + index * 0.1, duration: 0.6 }}
                 className="text-center group"
               >
-                <div className="text-6xl mb-4 animate-bounce-gentle group-hover:scale-110 transition-transform duration-300">
-                  {feature.icon}
-                </div>
+                                 <div className="text-6xl mb-4 animate-bounce-gentle group-hover:scale-110 transition-transform duration-300 sparkle">
+                   {feature.icon}
+                 </div>
                 <h3 className="text-xl font-serif font-bold text-bonbon-dark mb-3">
                   {feature.title}
                 </h3>

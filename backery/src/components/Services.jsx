@@ -72,7 +72,7 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-serif font-bold text-bonbon-dark mb-6">Our Services</h2>
+                     <h2 className="text-4xl lg:text-5xl font-serif font-bold text-bonbon-dark mb-6 text-shadow">Our Services</h2>
           <h2 className="text-4xl lg:text-5xl font-serif font-bold text-bonbon-dark mb-6">
             What we do
           </h2>
@@ -96,11 +96,11 @@ const Services = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.2 + index * 0.2, duration: 0.6 }}
-                className="bg-gradient-to-r from-bonbon-cream to-pink-50 rounded-2xl p-8 card-hover"
+                                 className="bg-gradient-to-br from-bonbon-cream to-white rounded-2xl p-8 card-hover glow-effect"
               >
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-r from-bonbon-pink to-bonbon-purple rounded-full flex items-center justify-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-bonbon-pink to-bonbon-gold rounded-full flex items-center justify-center shadow-lg">
                       <service.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -123,7 +123,7 @@ const Services = () => {
                     initial={{ width: 0 }}
                     animate={inView ? { width: `${service.percentage}%` } : {}}
                     transition={{ delay: 0.4 + index * 0.2, duration: 1, ease: "easeOut" }}
-                    className="bg-gradient-to-r from-bonbon-pink to-bonbon-purple h-3 rounded-full"
+                    className="bg-gradient-to-r from-bonbon-pink to-bonbon-gold h-3 rounded-full shadow-sm"
                   />
                 </div>
               </motion.div>
@@ -138,8 +138,8 @@ const Services = () => {
             className="relative"
           >
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-pink-200 to-purple-200 rounded-3xl blur-2xl opacity-30"></div>
-              <div className="relative bg-gradient-to-br from-bonbon-cream to-pink-100 rounded-3xl p-12 text-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-bonbon-peach to-bonbon-pink rounded-3xl blur-2xl opacity-30"></div>
+                             <div className="relative bg-gradient-to-br from-bonbon-cream to-bonbon-peach rounded-3xl p-12 text-center glow-effect">
                 <div className="text-8xl mb-6 animate-float">
                   🎂
                 </div>
@@ -184,7 +184,7 @@ const Services = () => {
               transition={{ delay: 1 + index * 0.1, duration: 0.6 }}
               className="bg-white rounded-2xl p-6 shadow-lg card-hover text-center"
             >
-              <div className="text-4xl mb-4 animate-bounce-gentle">
+                             <div className="text-4xl mb-4 animate-bounce-gentle sparkle">
                 {index === 0 && '🍰'}
                 {index === 1 && '🌈'}
                 {index === 2 && '🧁'}

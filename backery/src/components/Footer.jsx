@@ -18,7 +18,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-bonbon-dark text-white">
+         <footer className="bg-bonbon-dark text-white particles">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Company Info */}
@@ -29,7 +29,7 @@ const Footer = () => {
             className="md:col-span-1"
           >
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-bonbon-pink to-bonbon-peach rounded-full flex items-center justify-center">
+              <div className="w-12 h-12 bg-gradient-to-r from-bonbon-pink to-bonbon-gold rounded-full flex items-center justify-center shadow-lg">
                 <img
                   src="/assets/arunas_cake_house_logo.jpg"
                   alt="Arunas Cake House Logo"
@@ -48,13 +48,13 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
-                <motion.a
-                  key={social.name}
-                  href={social.href}
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                  className={`w-12 h-12 bg-white/10 rounded-full flex items-center justify-center transition-colors duration-300 ${social.color}`}
-                >
+                                 <motion.a
+                   key={social.name}
+                   href={social.href}
+                   whileHover={{ scale: 1.1 }}
+                   whileTap={{ scale: 0.9 }}
+                   className={`w-12 h-12 bg-white/10 rounded-full flex items-center justify-center transition-colors duration-300 ${social.color} hover-glow`}
+                 >
                   <social.icon className="w-6 h-6" />
                 </motion.a>
               ))}

@@ -127,7 +127,7 @@ const Products = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl font-serif font-bold text-bonbon-dark mb-6">Our Creations</h2>
+          <h2 className="text-4xl lg:text-5xl font-serif font-bold text-bonbon-dark mb-6 text-shadow">Our Creations</h2>
           <h2 className="text-4xl lg:text-5xl font-serif font-bold text-bonbon-dark mb-6">
             Enjoy the variety of handmade{' '}
             <span className="text-bonbon-pink">sweets and cakes</span>
@@ -148,11 +148,11 @@ const Products = () => {
             <motion.div
               key={product.id}
               variants={itemVariants}
-              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden card-hover"
+              className="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden card-hover gradient-border"
             >
               {/* Product Image */}
-              <div className="relative h-64 bg-gradient-to-br from-pink-100 to-bonbon-cream flex items-center justify-center">
-                <div className="text-8xl animate-float">
+              <div className="relative h-64 bg-gradient-to-br from-bonbon-peach via-bonbon-cream to-bonbon-pink flex items-center justify-center">
+                <div className="text-8xl animate-float sparkle">
                   {product.image}
                 </div>
                 
@@ -160,7 +160,7 @@ const Products = () => {
 
                 {/* Discount Badge */}
                 {product.discount && (
-                  <div className="absolute top-4 left-4 bg-bonbon-pink text-white px-3 py-1 rounded-full text-sm font-bold">
+                  <div className="absolute top-4 left-4 bg-gradient-to-r from-bonbon-pink to-bonbon-gold text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
                     -{product.discount}%
                   </div>
                 )}

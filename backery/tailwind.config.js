@@ -7,12 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        'bonbon-pink': '#FF6B9D',
-        'bonbon-peach': '#FDCDB2',
-        'bonbon-cream': '#FFF8F0',
-        'bonbon-brown': '#8B4513',
-        'bonbon-gold': '#FFD700',
-        'bonbon-dark': '#2D1B1B',
+        'bonbon-pink': '#fbbf24',   // Main accent: Vibrant Yellow (amber-400)
+        'bonbon-peach': '#fde68a',  // Lighter accent for gradients (amber-200)
+        'bonbon-cream': '#fef3c7',  // Light background (amber-100)
+        'bonbon-brown': '#92400e',  // Main text color (amber-800)
+        'bonbon-gold': '#f59e0b',   // Deeper gold accent (amber-500)
+        'bonbon-dark': '#78350f',   // Dark brown for footer (amber-900)
+        'bonbon-purple': '#fbbf24', // Gradient accent, now same as main yellow
       },
       fontFamily: {
         'serif': ['Playfair Display', 'serif'],

@@ -20,7 +20,7 @@ function App() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-bonbon-cream">
+    <div className="min-h-screen bg-gradient-to-br from-bonbon-cream via-bonbon-peach to-white">
       <Header 
         isScrolled={isScrolled}
       />

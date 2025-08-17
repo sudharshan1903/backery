@@ -21,7 +21,7 @@ const Hero = () => {
   ]
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-bonbon-cream via-pink-50 to-purple-50 pt-24 scroll-mt-24">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-yellow-50 via-amber-50 to-orange-100 pt-24 scroll-mt-24 particles">
       {/* Floating Elements */}
       {floatingElements.map((element, index) => (
         <motion.div
@@ -37,8 +37,8 @@ const Hero = () => {
 
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5" aria-hidden="true">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-bonbon-pink rounded-full blur-3xl hidden md:block"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-bonbon-purple rounded-full blur-3xl hidden md:block"></div>
+        <div className="absolute top-0 left-0 w-96 h-96 bg-bonbon-gold rounded-full blur-3xl hidden md:block"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-bonbon-amber rounded-full blur-3xl hidden md:block"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -51,15 +51,15 @@ const Hero = () => {
             className="text-center lg:text-left"
           >
 
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.8 }}
-              className="text-5xl lg:text-7xl font-serif font-bold text-bonbon-dark mb-6 leading-tight"
-            >
-              Handmade{' '}
-              <span className="text-gradient">mini cupcakes</span>
-            </motion.h1>
+                         <motion.h1
+               initial={{ opacity: 0, y: 30 }}
+               animate={{ opacity: 1, y: 0 }}
+               transition={{ delay: 0.4, duration: 0.8 }}
+               className="text-5xl lg:text-7xl font-serif font-bold text-bonbon-dark mb-6 leading-tight text-shadow"
+             >
+               Handmade{' '}
+               <span className="text-gradient sparkle">mini cupcakes</span>
+             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -103,15 +103,15 @@ const Hero = () => {
               className="flex justify-center lg:justify-start space-x-8 mt-12"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-bonbon-pink">500+</div>
+                                 <div className="text-3xl font-bold text-bonbon-gold pulse-glow">500+</div>
                 <div className="text-sm text-bonbon-brown">Happy Customers</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-bonbon-purple">50+</div>
+                                 <div className="text-3xl font-bold text-bonbon-amber pulse-glow">50+</div>
                 <div className="text-sm text-bonbon-brown">Unique Flavors</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-bonbon-gold">5★</div>
+                                 <div className="text-3xl font-bold text-yellow-500 pulse-glow">5★</div>
                 <div className="text-sm text-bonbon-brown">Customer Rating</div>
               </div>
             </motion.div>
@@ -132,8 +132,8 @@ const Hero = () => {
                 transition={{ delay: 0.5, duration: 0.8, type: "spring" }}
                 className="relative mx-auto w-80 h-80 lg:w-96 lg:h-96"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-pink-200 to-purple-200 rounded-full blur-2xl opacity-30"></div>
-                <div className="relative bg-white rounded-full w-full h-full flex items-center justify-center shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-br from-bonbon-peach to-bonbon-pink rounded-full blur-2xl opacity-40"></div>
+                                 <div className="relative bg-white rounded-full w-full h-full flex items-center justify-center shadow-2xl glow-effect">
                   <div className="text-8xl lg:text-9xl">
                     🧁
                   </div>
@@ -172,11 +172,11 @@ const Hero = () => {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="w-6 h-10 border-2 border-bonbon-pink rounded-full flex justify-center cursor-pointer"
+          className="w-6 h-10 border-2 border-bonbon-gold rounded-full flex justify-center cursor-pointer"
           onClick={() => handleNavClick('#products')}
         >
           <motion.div
-            className="w-1 h-3 bg-bonbon-pink rounded-full mt-2"
+            className="w-1 h-3 bg-bonbon-gold rounded-full mt-2"
           />
         </motion.div>
       </motion.div>
